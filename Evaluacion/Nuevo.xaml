@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Evaluacion.Nuevo"
+             Title="Nuevo">
+    <Grid>
+        <Image Source="reloj.jpg" Aspect="AspectFill" />
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <StackLayout BackgroundColor="White" Opacity="0.8"  Padding="20">
+                <Label HorizontalOptions="Center" FontSize="20">Registro</Label>
+
+                <Entry Placeholder="Username" TextColor="Black" Margin="0,10" x:Name="UsernameEntry"/>
+                <Entry Placeholder="Email" TextColor="Black" Margin="0,10" x:Name="EmailEntry"  />
+                <Entry Placeholder="Password" TextColor="Black" IsPassword="true" Margin="0,10" x:Name="PasswordEntry" />
+                <Entry Placeholder="Confirmar Password" TextColor="Black" IsPassword="true"  Margin="0,10" x:Name="ConfirmarPasswordEntry"/>
+                <Entry Placeholder="Telefono" TextColor="Black"  Margin="0,10"  x:Name="TelefonoEntry" />
+                <Button Text="Registrar" Clicked="Button_Clicked" HorizontalOptions="FillAndExpand" TextColor="Black" Margin="0,20" BackgroundColor="#ACACAC" CornerRadius="10" />
+
+                <!-- Agregar el Label para mostrar el mensaje de registro -->
+                <Label x:Name="StatusLabel" Text="" HorizontalOptions="Center" TextColor="Red" Margin="0,10" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
